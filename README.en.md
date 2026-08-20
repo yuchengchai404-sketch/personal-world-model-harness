@@ -72,6 +72,8 @@ A prompt answers only: “What should we tell the model this time?” PWM also d
 ```text
 .
 ├─ AGENTS.md
+├─ LICENSE
+├─ README.en.md
 ├─ docs/
 │  ├─ architecture.md
 │  ├─ context-strategy.md
@@ -89,7 +91,8 @@ A prompt answers only: “What should we tell the model this time?” PWM also d
 │     └─ SKILLS/
 └─ examples/
    ├─ learning-loop/
-   └─ promotion-audit/
+   ├─ promotion-audit/
+   └─ real-case-film-reflection/
 ```
 
 ## Minimal Runtime
@@ -113,10 +116,11 @@ The template does not depend on Obsidian plugins. Obsidian can serve as the pers
 
 The project does not present `testing` rules as “best practices.” See [Iteration and Evaluation](docs/iteration-and-evaluation.md).
 
-## Two Sanitized Demos
+## Demos and a Real Run
 
 - [Learning Loop](examples/learning-loop/README.md): from the user's original understanding to a Note, Candidate Insight, and STATE update;
-- [Promotion Audit](examples/promotion-audit/README.md): how an audit missed a procedural asset, and how the system revised its rule in response to that failure.
+- [Promotion Audit](examples/promotion-audit/README.md): how an audit missed a procedural asset, and how the system revised its rule in response to that failure;
+- [Real Case — Film Reflection](examples/real-case-film-reflection/README.md): a complete PWM loop from divergent reflection through independent challenge, user validation, structured convergence, differentiated Insight promotion, and STATE update.
 
 ## Current Boundaries
 
@@ -134,4 +138,4 @@ Run the smallest useful loop in real tasks first. Expand only when recurring fri
 
 ## License
 
-The license has not yet been selected. Before public release, the repository must define how its code-like templates and explanatory materials may be used.
+This repository is licensed under the [MIT License](LICENSE). Use, copying, modification, distribution, and commercial use are permitted provided that the copyright and license notices are preserved. The project is provided “as is,” without warranty.

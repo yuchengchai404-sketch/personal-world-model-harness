@@ -16,7 +16,7 @@
 - [ ] 不含无再分发许可的第三方 PDF；
 - [ ] 不复制付费文章、课程或完整对话；
 - [ ] 示例引用有来源和合理长度；
-- [ ] LICENSE 已由项目 Owner 确认。
+- [x] LICENSE 已由项目 Owner 确认并采用全仓统一 MIT License。
 
 ## Claims
 

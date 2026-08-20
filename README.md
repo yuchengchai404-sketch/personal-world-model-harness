@@ -72,6 +72,8 @@ Prompt 只回答“这次对模型说什么”。PWM 还定义：
 ```text
 .
 ├─ AGENTS.md
+├─ LICENSE
+├─ README.en.md
 ├─ docs/
 │  ├─ architecture.md
 │  ├─ context-strategy.md
@@ -89,7 +91,8 @@ Prompt 只回答“这次对模型说什么”。PWM 还定义：
 │     └─ SKILLS/
 └─ examples/
    ├─ learning-loop/
-   └─ promotion-audit/
+   ├─ promotion-audit/
+   └─ real-case-film-reflection/
 ```
 
 ## 最小运行方式
@@ -113,10 +116,11 @@ Prompt 只回答“这次对模型说什么”。PWM 还定义：
 
 项目不会把 `testing` 规则包装成“最佳实践”。详见 [Iteration and Evaluation](docs/iteration-and-evaluation.md)。
 
-## 两个脱敏 Demo
+## Demo 与真实运行案例
 
 - [Learning Loop](examples/learning-loop/README.md)：从用户原始理解到 Note、Candidate Insight 与 STATE 更新；
-- [Promotion Audit](examples/promotion-audit/README.md)：一次审计如何遗漏程序性资产，以及系统如何根据失败修正规则。
+- [Promotion Audit](examples/promotion-audit/README.md)：一次审计如何遗漏程序性资产，以及系统如何根据失败修正规则；
+- [《欢迎来龙餐馆》真实运行案例](examples/real-case-film-reflection/README.md)：从发散观后感出发，经过独立挑战、用户验证、结构化收束、差异化 Insight 晋升与 STATE 更新，完整展示一次 PWM 闭环。
 
 ## 当前边界
 
@@ -134,4 +138,4 @@ Prompt 只回答“这次对模型说什么”。PWM 还定义：
 
 ## License
 
-License 尚未确定。公开发布前需要明确代码式模板与说明性内容的使用许可。
+本仓库采用 [MIT License](LICENSE)。允许使用、复制、修改、分发和商业使用，但必须保留版权与许可证声明；项目按“现状”提供，不附带保证。
