@@ -1,5 +1,7 @@
 # Personal World Model Harness
 
+[中文](README.md) | [English](README.en.md)
+
 > A human-in-the-loop agent harness for building, testing and revising a traceable personal world model.
 
 ## 项目缘起
