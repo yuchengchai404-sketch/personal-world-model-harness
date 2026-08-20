@@ -1,0 +1,24 @@
+# Private or device-specific state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.trash/
+
+# Local environment
+.DS_Store
+Thumbs.db
+desktop.ini
+.env
+.env.*
+
+# Credentials and private exports
+*.pem
+*.key
+*.p12
+*.pfx
+private/
+exports/
+
+# Common temporary files
+*.tmp
+*.bak
+~$*
