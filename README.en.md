@@ -120,7 +120,7 @@ The project does not present `testing` rules as “best practices.” See [Itera
 
 - [Learning Loop](examples/learning-loop/README.md): from the user's original understanding to a Note, Candidate Insight, and STATE update;
 - [Promotion Audit](examples/promotion-audit/README.md): how an audit missed a procedural asset, and how the system revised its rule in response to that failure;
-- [Real Case — Film Reflection](examples/real-case-film-reflection/README.md): a complete PWM loop from divergent reflection through independent challenge, user validation, structured convergence, differentiated Insight promotion, and STATE update.
+- [Real Case — Film Reflection](examples/real-case-film-reflection/README.en.md): a complete PWM loop from divergent reflection through independent challenge, user validation, structured convergence, differentiated Insight promotion, and STATE update.
 
 ## Current Boundaries
 
