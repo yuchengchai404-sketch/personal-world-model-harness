@@ -34,4 +34,4 @@
 - [x] 至少一个 Demo 可从输入走到 STATE 更新；
 - [x] `.gitignore` 覆盖设备状态与私有导出；
 - [x] 先创建 Private Repository 并复核；
-- [ ] Owner 最终确认后再转 Public。
+- [x] Owner 最终确认后再转 Public。
