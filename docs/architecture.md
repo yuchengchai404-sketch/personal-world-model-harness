@@ -19,7 +19,7 @@ flowchart TB
     subgraph CP["Control Plane"]
         CORE["CORE\nmission, boundaries, governance"]
         USER["USER\nstable preferences and owner context"]
-        STATE["STATE\ncurrent task and handoff"]
+        STATE["STATE\ncurrent cognitive stream, system pending, and handoff"]
         SKILLS["SKILLS\nworkflow selection"]
     end
 
@@ -40,15 +40,16 @@ Control Plane 决定“系统如何运行”；Data Plane 保存“系统知道�
 
 ## 3. Single source of truth
 
-`STATE.md` 是当前进度、开放问题、下一动作和 handoff 的唯一权威来源。
+`STATE.md` 是当前认知进度、开放问题、下一动作、系统尾项和 handoff 的唯一权威来源。
 
 历史日志可以解释过去发生过什么，但不能覆盖当前 STATE；Note 可以记录某次讨论，但不能自行宣布当前任务已经改变。
 
 PWM 把全局状态与话题恢复点分开：
 
-- `STATE.md` 只声明一个 Current Stream，并列出可恢复的 Parked Streams；
+- `STATE.md` 只声明一个认知 Current Stream，并列出可恢复的 Parked Streams；
 - 每个 Topic Note 的 Resume Block 只负责该话题的最后结论、开放问题和最小恢复 Context；
 - Topic Note 不能越权宣布自己是全局当前任务。
+- 架构、配置、迁移和发布维护留在 Hub，并在 System Pending 或相关系统记录中追踪，不因发生维护就替换认知 Current Stream。
 
 这个分层让不同主题可以拥有独立工作视图，同时避免多个主题同时修改共享状态。详见 [Task Routing](task-routing.md)。
 
@@ -82,7 +83,9 @@ AI 不可以：
 - 未经批准修改核心 Model；
 - 以表达精炼程度代替证据。
 
-## 6. Data flow
+## 6. Cognitive flow and system-maintenance flow
+
+认知主题进入完整的理解、挑战、沉淀和晋升流程：
 
 ```text
 User input
@@ -96,6 +99,19 @@ User input
 ```
 
 当输入属于另一个已有主题时，路由发生在加载知识之前：先为当前主题写恢复点，再切换 STATE，然后只加载目标主题所需的最小 Context。这样，长会话被拆成可恢复的主题工作集，而不是把所有历史重新塞回一个窗口。
+
+系统维护使用更短的控制流：
+
+```text
+System / publishing / configuration input
+  → keep in Hub
+  → load only relevant system files
+  → make and verify the bounded change
+  → update System Pending or History only when material
+  → keep the cognitive Current Stream unchanged
+```
+
+系统维护不因完成而自动执行完整的认知 Promotion Audit。只有独立于配置或宣传产物、单独通过 Insight Gate 的命题，才进入 Candidate Insight 审查。
 
 ## 7. v1 restraint
 

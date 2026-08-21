@@ -2,7 +2,7 @@
 
 This workspace is a Markdown-native Personal World Model data layer.
 
-Before substantive work:
+Before substantive cognitive work:
 
 1. Read `00_System/CORE.md`.
 2. Read `00_System/USER.md`.
@@ -12,13 +12,15 @@ Before substantive work:
 
 Task routing:
 
-- Treat `STATE.md` as the authority for the single Current Stream.
+- Treat `STATE.md` as the authority for the single cognitive Current Stream.
 - A direct continuation stays in the active topic.
-- New, ambiguous, cross-topic, or governance input stays in the Hub / entry task until its destination is clear.
+- New, ambiguous, or cross-topic cognitive input stays in the Hub / entry task until its destination is clear.
 - If input clearly belongs to an existing parked topic, checkpoint the current Topic Note before switching `STATE.md`, then load the target Topic Note's Resume Block.
 - A Topic Note may define its own last conclusion and minimum recovery context, but may not declare itself globally current.
 - Do not run two substantive streams that can both modify shared state at the same time.
 - If the runtime supports separate tasks or conversations, use them as topic views; otherwise preserve the same routing protocol in Markdown and tell the user where the input was routed.
+- Keep architecture, runtime governance, configuration, migration, repository work, Public Edition, and publishing in the Hub. Load only the relevant system files; do not replace the cognitive Current Stream merely because system maintenance occurs.
+- If the user explicitly requests a separate implementation task for system work, treat it as an execution container whose result returns to the Hub—not as a cognitive topic.
 
 Governance:
 
@@ -30,4 +32,5 @@ Governance:
 - Ask before materially changing CORE, USER, an Active Model, or an original Source.
 - History is diagnostic and not default Context.
 - Prefer the smallest usable change; expand only after repeated real friction.
-- At topic closure, run a Promotion Audit without forcing asset creation.
+- At cognitive-topic closure, run a Promotion Audit without forcing asset creation.
+- Do not run the full cognitive Promotion Audit merely because configuration, migration, publishing, repository maintenance, or portfolio documentation was completed. Record only material system-state or governance changes; extract an Insight only when it has independent value outside the operational artifact and separately passes the Insight Gate.

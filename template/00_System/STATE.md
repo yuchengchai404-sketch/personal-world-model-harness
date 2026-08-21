@@ -25,6 +25,10 @@ status: active
 
 - Learning loop demo — resume from [[Learning Demo Topic]] when explicitly selected
 
+## System Pending
+
+- Public documentation refresh — handled in the Hub; does not replace the cognitive Current Stream
+
 ## Pending Decisions
 
 - Keep the claim in Note or create a Candidate Insight?
