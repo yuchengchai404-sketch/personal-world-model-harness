@@ -61,6 +61,8 @@ Evaluate independent retrieval value and maintenance cost
 - 真实复用样本仍少；
 - Note → Insight 取舍依赖判断；
 - 没有自动化评测集；
+- 没有安装器、后台服务、自动采集 / RAG 管线或独立多任务 UI；
+- 任务路由已在原始 PWM 中运行，但跨 Agent Runtime 的可移植性仍在 testing；
 - 尚未证明该 Harness 对不同用户同样有效；
 - Obsidian + workspace-aware Agent 的组合仍需要人工维护。
 

@@ -5,18 +5,25 @@ status: active
 
 # STATE
 
-## Current Focus
+## Current Stream
 
-- project: PWM demo
-- current_task: Evaluate whether a discussion produced a reusable Insight
+- topic: PWM demo — promotion review
+- topic_note: [[Demo Topic Note]]
+- status: active_review
+- current_stage: first review complete
+- next_question: Test the candidate claim against one counterexample
+- primary_skill: [[model-promotion]]
 - success_condition: Preserve the complete Note while promoting only independently reusable material
 
-## Active Topic
+## Current Runtime Context
 
-- topic_note: [[Demo Topic Note]]
-- stage: first review complete
-- central_question: Does the candidate claim change future reasoning outside this topic?
-- next_question: Test the claim against one counterexample
+- default_load: CORE + USER + this STATE + model-promotion + [[Demo Topic Note]]
+- load_if_needed: the candidate Insight and one relevant counterexample
+- do_not_load_by_default: the entire Vault or History
+
+## Parked Streams
+
+- Learning loop demo — resume from [[Learning Demo Topic]] when explicitly selected
 
 ## Pending Decisions
 

@@ -12,6 +12,29 @@ PWM 不把“模型能装下多少”视为 Context Engineering 的目标。目�
 4. 一个 primary Skill：本轮主要工作流；
 5. 能实质改变答案的最少 Source / Note / Insight / Model / Case。
 
+开始加载第 4、5 项之前，Runtime 先完成任务路由。路由错误会让“最小 Context”变成最小但错误的 Context。
+
+## Route before retrieval
+
+新输入先分为四类：
+
+1. 明确继续 Current Stream：留在当前主题；
+2. 明确属于已有 Parked Stream：先检查当前主题恢复点，再切换；
+3. 新主题、跨主题或归属不清：留在 Hub / 入口层澄清；
+4. 系统治理问题：进入治理流，不混入内容主题。
+
+切换时遵守一个顺序：
+
+```text
+checkpoint current topic
+        → update STATE Current Stream
+        → load target Resume Block
+        → select exactly one primary Skill
+        → load minimum relevant knowledge
+```
+
+路由协议减少跨主题污染和恢复成本，但不能保证所有 Runtime 都提供会话列表、自动跳转或 Hub UI。平台能力与 PWM 的持久状态协议应分开评价。详见 [Task Routing](task-routing.md)。
+
 ## Context selection test
 
 加载一个文件前问：
@@ -44,5 +67,6 @@ PWM 不把“模型能装下多少”视为 Context Engineering 的目标。目�
 - 多个 Skill 同时给出冲突流程；
 - 用户背景被机械塞进每个回答；
 - 为防止遗忘而默认读取整个 Vault。
+- 看到另一个主题的关键词就直接加载其资料，却没有先检查 STATE 与恢复点。
 
 这些问题优先通过减少和分层 Context 解决，而不是单纯增加窗口长度。
