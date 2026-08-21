@@ -6,6 +6,10 @@
 
 **AI can work on the cognitive working papers. The human retains final sign-off over durable beliefs.**
 
+**Governance first. Automation second.**
+
+> ⚠️ **Runtime boundary:** This repository contains an operational Markdown-native harness, runtime instructions, templates, and sanitized examples, but it is not a turnkey standalone application. It requires a compatible agent runtime that can follow workspace instructions and operate on Markdown files. The author's private vault, live workspace configuration, and platform runtime are not included.
+
 ## Why I Built This
 
 We live in an age of extreme information abundance and extreme scarcity of attention.
