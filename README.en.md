@@ -11,6 +11,14 @@ This reference edition reflects the current design reviewed through **2026-10-27
 
 [Start with the template](template/00_System/Home.md) · [Architecture](docs/architecture.md) · [Human-facing delivery](docs/human-facing-delivery.md) · [Evolution](docs/evolution.md) · [Changes](CHANGELOG.md)
 
+## See the practice, not only the protocol
+
+**[Practice portfolio (Chinese)](showcase/README.md)** · [Offline interactive showcase](showcase/dist/index.html)
+
+Eight reconstructed case studies trace learning goals, cross-domain reasoning, reusable expressions, cognitive review, teaching revisions, search tests, external tools and review. Each follows a real problem through its changes and lessons.
+
+Three synthetic examples let readers switch between a system summary, a human-facing review and a reusable expression. They illustrate mechanisms without exporting the private vault. Download the self-contained HTML to open it locally; GitHub's file viewer does not run it. The owner reviewed the preview and approved publication on 2026-10-27.
+
 ## From cognitive audit to sustained collaboration
 
 PWM began with an audit-inspired question: can fluent AI output become personal belief without sufficient attention to provenance, attribution and evidence?

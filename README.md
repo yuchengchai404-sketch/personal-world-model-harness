@@ -11,6 +11,16 @@ PWM 是一套面向长期学习与思考的个人认知协作系统：用 AI 帮
 
 [从模板开始](template/00_System/Home.md) · [架构](docs/architecture.md) · [认知回顾](docs/human-facing-delivery.md) · [从 8 月到现在](docs/evolution.md) · [本次更新](CHANGELOG.md)
 
+## 先看 PWM 怎样在实践中成长
+
+**[进入完整实践作品集](showcase/README.md)** · [离线互动展厅](showcase/dist/index.html)
+
+![PWM实践作品展厅](showcase/images/cover.png)
+
+八段真实记录的公开重构：自主学习、认知贯通、可复述表达、回顾地图、教学返修、检索对照、外置工具和外部评审。每段说明原问题、关键变化与可带走的经验，不只列功能与规则。
+
+展厅可切换“系统摘要／人的回顾／可复述表达”，体验同一份理解怎样面向不同用途重新成稿。演示采用合成情境，真实案例另有依据索引。下载 HTML 后双击即可；GitHub 文件页不会直接运行页面。
+
 ## 从“认知审计”到持续认知协作
 
 PWM 起于一个受审计工作启发的问题：流畅的 AI 答案，会不会在没有检查来源、归属和依据的情况下，变成自己的信念？

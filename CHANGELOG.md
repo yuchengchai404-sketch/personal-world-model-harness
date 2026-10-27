@@ -1,5 +1,13 @@
 # Public Edition Changelog
 
+## 2026-10-27 — Practice portfolio / 完整实践作品版
+
+- 在已发布的现行设计参考版之上，补充八段依据真实记录重构的实践案例与11组依据身份。
+- 增加自包含离线互动展厅：案例搜索、三种内容出口、合成贯通示例、来源展开、表达复制与深浅色。
+- 案例和展厅共用一份内容源，保留通用模板；未复制私人知识库、聊天、真实地图数据或工具凭据。
+- 实际失败、返修、未复现的检索差异及后续纠偏保留，不把所有迭代包装成一次成功。
+- 用户已审阅本地预览并于2026-10-27确认发布；在下方现行设计版之上补充实践层，不替代其模板与架构。
+
 ## 2026-10-27 — Current-design refresh / 现行设计更新
 
 This is a public-reference refresh, not a private-vault export. The owner reviewed the local preview and approved publication on 2026-10-27.
