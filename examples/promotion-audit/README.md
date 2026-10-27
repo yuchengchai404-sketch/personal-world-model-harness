@@ -1,5 +1,7 @@
 # Demo: Promotion Audit Learns from Failure
 
+> Historical example from the initial public edition. It explains an early failure, not a mandate to scan every asset type after every turn. Current purpose-based decisions and closure scope are defined in [asset decisions](../../docs/promotion-pipeline.md).
+
 This is a sanitized system-iteration example.
 
 ## Initial discussion output

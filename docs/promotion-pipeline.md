@@ -1,69 +1,41 @@
-# Promotion Pipeline
+# 资产取舍与晋升
+保留旧文件名供链接接续；当前设计不是必须逐级升级的 pipeline。
 
-## Flow
+## 先问用途，再决定去向
 
 ```mermaid
-flowchart LR
-    N["Note / Observation"] --> CI["Candidate Insight"]
-    CI --> TI["Testing Insight"]
-    TI --> CM["Candidate Model"]
-    CM --> A{"User approval"}
-    A -->|"approve"| AM["Active Model"]
-    A -->|"needs evidence"| TI
-    CI -->|"duplicate / weak"| N
-    TI -->|"challenged"| AR["Revise / Archive"]
+flowchart TB
+    N["新材料、判断或反证"] --> Q{"什么去向有用？"}
+    Q --> A["保留或更新 Note"]
+    Q --> I["独立调用的 Insight"]
+    Q --> M["准备有依据的 Candidate Model"]
+    Q --> R["收窄、拆分、停止类比或不采用"]
+    M --> T["补证、检验与修订"]
+    T --> G{"满足证据条件并获得明确批准？"}
+    G -->|是| ACT["Active Model"]
+    G -->|否| HOLD["保留候选、继续检验或撤回"]
 ```
 
-## Why promotion exists
+Note 是完整学习成果，不是等着晋升的半成品。重复调用同一领域的判断也可能有独立价值，不必强造跨领域用途。更统一、更抽象不一定更成熟。
 
-漂亮表达容易造成一种错觉：写得越完整，越像真理。Promotion Gate 把表达质量与证据等级分开。
+## Insight
 
-## Insight Gate
+判断是否有独立调用价值、推理依据、可检验性和维护净收益。保留来源、归属及适用范围，检查相关反例和现有资产。已有文件能准确承接时补充，不为每轮交付新建。
 
-Candidate Insight 至少需要：
+candidate 表示有依据的候选；testing 表示实际进入检验或已有局部支持，须说明发生了什么。仅写了验证计划不等于 testing，testing 也不是验证成功。
 
-- 是一个可独立陈述的判断，而非来源摘录；
-- 推理链可以说明；
-- 可追溯到来源、观察或 Case；
-- 已检查至少一个反例或边界；
-- 已说明与现有 Insight / Model 的关系；
-- 脱离原 Topic Note 后仍具有独立调用价值。
+## Model
 
-## Model Gate
+可以先准备有用途、结构和依据的 Candidate Model，列明缺口。不能把 Active 的全部要求前置，压住候选探索；也不能因为成稿成熟而跳过门槛。
 
-Candidate Model 至少需要：
+正式 Active 的参考门槛：至少两个相互独立的来源、领域或现实场景支持；适用条件与失效边界；可回查的真实 Case 及反例/竞争解释；能组织判断或行动；相对已有模型有增量；用户明确批准。独立性看底层证据，不把同源转述或换场景的假想类比重复计数。
 
-- 两个相互独立的来源、领域或现实场景；
-- 明确适用条件与失效边界；
-- 支持 Case，并处理反例或竞争解释；
-- 能指导预测、判断或行动；
-- 相对现有模型具有信息增量；
-- 用户明确批准。
+## 什么时候处理
 
-## Promotion Audit
+重要新判断、支持或挑战，以及自然收束时处理相关增量。完整认知主题关闭时检查是否遗漏有价值的理解、判断方法、案例、表达、稳定偏好和跨主题输入，不设产出配额。
 
-话题或任务有效收束时，扫描：
+系统维护和普通教学推进不每轮执行全套审计。已批准的执行要接上；更正要进入下次实际读取的主句、表达与恢复点，不能只远处追加说明。
 
-- 新 State；
-- Source-bound understanding；
-- declarative insight；
-- causal mechanism；
-- judgment / decision model；
-- diagnostic checklist；
-- reusable workflow；
-- real-world Case；
-- stable preference。
+## 表达是另一种用途
 
-扫描不是产出配额。没有合格资产时，应明确记录“无晋升”，而不是为了闭环制造 Insight。
-
-## Current testing problem
-
-有价值的完整回复适合进入 Note，但并不都值得拆成 Insight。v1 正在测试五个轻量问题：
-
-1. 是否具有独立调用价值？
-2. 是否可能跨场景复用？
-3. 是否与现有资产重复？
-4. 是否具有推理、边界和验证方式？
-5. 单独建档的价值是否大于维护成本？
-
-这些问题目前是 testing heuristic，不是机械评分表。
+可复述表达帮助记住和讲述，不承载全部论证。确认具体原句与采用意图，保留归属及影响含义的语境。助记短句和讲述版可以共存，不因新稿更流畅就把旧稿全部作废。

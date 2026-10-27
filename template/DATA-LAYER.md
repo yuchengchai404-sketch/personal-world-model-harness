@@ -1,53 +1,20 @@
 # Data Layer
 
-Recommended minimal folders:
+Files provide persistence. Editors and agent runtimes access the same workspace; no specific editor plugin is required.
 
-```text
-00_System/   Control Plane: CORE, USER, STATE, SKILLS
-10_Inbox/    Unprocessed inputs
-20_Sources/  External originals and source metadata
-30_Notes/    Source-bound learning and topic records
-40_Insights/ Reusable judgments under review
-50_Models/   Validated decision structures
-60_Cases/    Real-world applications and results (optional in v1)
-90_History/  Migration, audit and system iteration records
-```
+| Folder | Purpose |
+|---|---|
+| 00_System | Principles, user preferences, global routing, workflows and conditional operations |
+| 10_Inbox | Optional temporary intake |
+| 20_Sources | Source metadata and authorized originals |
+| 30_Notes | Source-bound understanding, topic history, cases and local recovery |
+| 40_Insights | Independently useful judgments with evidence status |
+| 50_Models | Candidate or adopted methods; directory location is not approval |
+| 60_Cases | Optional independent real-world cases when separate retrieval helps |
+| 90_History | Revisions and diagnostic history, not default runtime context |
 
-The folder number is navigation, not epistemic status. Status is expressed in the file's Properties and content.
+Create optional folders only when needed. This starter includes two fictional Notes so STATE resolves without missing placeholder files.
 
-## Minimal Properties
+Use only fields that support real work: type, status, source or origin, and dates when meaningful. Candidate, testing and active describe different states, not confidence scores. A topic's next question belongs in its Resume, not a second global queue.
 
-Note:
-
-```yaml
----
-type: note
-status: active
-created: YYYY-MM-DD
-source: "[[Source]]"
----
-```
-
-Insight:
-
-```yaml
----
-type: insight
-status: candidate
-created: YYYY-MM-DD
-origin:
-  - "[[Topic Note]]"
----
-```
-
-Model:
-
-```yaml
----
-type: model
-status: candidate
-created: YYYY-MM-DD
----
-```
-
-Add fields only when they materially improve retrieval, validation, or governance.
+Original statements, reasoning, approval, current validity and outcomes should be recoverable. A derived review links back to the source; it does not become another independently edited claim store.

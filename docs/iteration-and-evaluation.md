@@ -1,75 +1,35 @@
-# Iteration and Evaluation
+# 迭代与评估
 
-## Evaluation stance
+## 先看实际使用
 
-PWM 不用“文件更多”“结构更完整”证明有效。系统至少应在真实运行中改善：
+输入是什么？关键判断怎样形成？用户实际看到了什么？下次是否正确取用？检查这条链，不用规则完整、文件已改或制作方自评替代结果。
 
-- 跨会话恢复；
-- Context 相关性；
-- 用户原话与 AI 推断的归属清晰度；
-- 误解、隐藏假设和反例的发现；
-- Insight 的跨领域复用；
-- 现实判断或行动结果；
-- 维护时间与认知收益的比例。
+| 证据 | 可以支持 | 不能直接证明 |
+|---|---|---|
+| 文件、链接、状态检查 | 引用存在、版本和记录一致 | 用户理解或学习兴趣 |
+| 实际页面操作 | 搜索、复制、导航和读取可用 | 每个节点都能恢复理解 |
+| 教学原文与反馈 | 某轮解释与纠偏的实际效果 | 长期稳定的教学质量 |
+| 真实使用及回传 | 某次应用和修正发生 | PWM 造成的全部因果增益 |
+| 多轮使用 | 在这些条件下出现重复价值 | 对所有用户普遍有效 |
 
-## Evidence levels
+## 不同问题采用不同改法
 
-| Level | Requirement |
-|---|---|
-| `validated-in-use` | 在多个真实回合中反复产生可观察价值 |
-| `supported-by-failure` | 有明确失败案例说明旧设计为何需要修正 |
-| `testing` | 已形成机制和验证方法，但样本不足 |
-| `candidate` | 可能跨场景成立，尚未满足 Model Gate |
+确定性缺口直接修入口，例如旧表达仍标待确认；开放性问题先定位机制，例如选材偏了而不是免责声明太长。候选方案要说清改哪里、保住什么、怎样检验，不能只把问题反写成“更自然、更主动”。
 
-## Example iteration chain
+有限回放或对照可以帮助筛掉坏方案，但最终还要看真实使用。一次通过不永久免检；也不把小纠错变成大实验。
 
-```text
-Failure
-Topic closed with useful material left only in Note
-        ↓
-Change 1
-Add mandatory Promotion Audit
-        ↓
-New failure
-Audit finds claims but misses a reusable decision workflow
-        ↓
-Change 2
-Scan multiple artifact types, not only propositions
-        ↓
-New risk
-Broader scan may over-produce Insights
-        ↓
-New failure
-Portfolio maintenance takes over the cognitive Current Stream
-        ↓
-Change 3
-Separate cognitive topics from Hub-based system maintenance
-        ↓
-Current tests
-Evaluate retrieval value, maintenance cost, and routing classification
-```
+## 轻量维护
 
-真正的迭代记录应保留：
+用户发起定期检查时，从期间变更、上次未结事项和少量轮换使用链入手。重要改动定向复核；只有局部无法界定影响且获授权，才扩大深审。没有重要变化可简短结束。
 
-- 触发问题；
-- 系统修改；
-- 修改理由；
-- 预期收益；
-- 潜在副作用；
-- 后续验证结果。
+先核对旧问题是否已获批、修复、合并或拒绝，不重复开单。结案区分内容修复、行为复验与长期效果；当前事项可以结束，不因长期效果未证而永久占待办。
 
-## Stop condition
+## 证据标签
 
-如果迭代记录本身的维护成本长期高于诊断价值，应缩减或停止。History 是诊断层，不是默认 Runtime Context。
+沿用早期标签但限定含义：`validated-in-use` 指所述使用范围内观察到价值，不是一般性有效证明；`supported-by-failure` 指失败支持改进方向，不证明新方案已成功；`testing` 指正在检验；`candidate` 指候选判断或方法。
 
-## Current limitations
+当前公开版为模板与设计更新。合成例子说明预期行为；没有在所有平台重新运行整套认知实验。工具功能和隐私边界见[外部能力](external-tools.md)。
 
-- 真实复用样本仍少；
-- Note → Insight 取舍依赖判断；
-- 没有自动化评测集；
-- 没有安装器、后台服务、自动采集 / RAG 管线或独立多任务 UI；
-- STATE + Topic Resume 恢复已在原始 PWM 中运行，但“认知任务 / 系统维护”分类和跨 Agent Runtime 可移植性仍在 testing；
-- 尚未证明该 Harness 对不同用户同样有效；
-- Obsidian + workspace-aware Agent 的组合仍需要人工维护。
+## 停止条件
 
-这些限制是项目的一部分，不应从作品集中隐藏。
+问题已在约定范围修复并核验即可结束。允许不改、撤回或暂缓。重要修订保留相称恢复能力，回退只撤目标增量，不覆盖后续学习。历史是诊断材料，不是每轮常驻成本。

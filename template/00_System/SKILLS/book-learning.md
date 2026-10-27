@@ -3,29 +3,14 @@ type: skill
 status: active
 ---
 
-# Skill: book-learning
+# book-learning
 
-## Purpose
+Use for understanding or examining a book or selected passage. Source-bound understanding is a result in its own right, not merely raw material for Insights.
 
-Help the user understand a book and gradually transform source-bound knowledge into testable personal Insights.
+Recover the user's current purpose and relevant passage. Start from a question or a whole-work map as appropriate; do not force one reading order. Distinguish original text, translation, explanation and extension, preserving locators.
 
-## Modes
+Explain with the background and examples needed now. Invite the learner's interpretation when useful, but do not require a response before answering a direct question. Independently assess the central meaning, key distinctions and relevant counterevidence without manufacturing disagreement.
 
-- Mode A: start from a concrete user question, then restore the broader structure.
-- Mode B: start with a global map, then move through the source in units.
+Use meaningful follow-up to develop understanding and transfer. Stop, change approach or accept a pause when benefit declines; stopping is not proof of mastery.
 
-## Loop
-
-1. Locate the current passage within the whole work.
-2. Present the source location, meaning, structure, and required background.
-3. Ask the user for their understanding, question, or real-world analogy.
-4. Independently review accuracy, assumptions, counterexamples, and boundaries.
-5. Apply the three-part analogy check when needed.
-6. Use one or two follow-up rounds; stop when information gain falls.
-7. Create a source-bound Note that preserves user wording near the relevant passage.
-8. Put claims beyond the source into Candidate Insight only after the Gate.
-9. Update STATE and handoff.
-
-## Stop Conditions
-
-The user can explain the structure in their own words; major misunderstandings are corrected; the Note and STATE can restore the next session.
+Keep original contributions beside the relevant passage in the Note. Handle important increments through Operations and the asset workflow; do not make a new file per reply. Update the local Resume, and global STATE only when global stage or routing changes.

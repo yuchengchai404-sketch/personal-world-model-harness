@@ -3,22 +3,16 @@ type: skill
 status: active
 ---
 
-# Skill: topic-exploration
+# topic-exploration
 
-## Purpose
+Use to establish, deepen or revise understanding of a topic. Work from the user's current question and purpose, not only the stored course route.
 
-Build a problem map, core structure, and next action for a topic that does not yet have a stable framework.
+Choose the explanation, sequence, examples, depth and visual forms that make the question understandable. A map can locate unfamiliar material; a familiar situation can bridge into a mechanism. Do not turn backend governance into lesson headings.
 
-## Loop
+Distinguish facts, source interpretations and inference. Investigate missing evidence when it can change the answer. Explain capabilities and newly possible uses as well as conditions; do not make limitations the default center of every product discussion.
 
-1. Clarify whether the goal is understanding, decision, application, or a learning route.
-2. Map concepts, relationships, disagreements, and unknowns.
-3. Distinguish fact, mainstream explanation, dispute, and inference.
-4. Select the highest-information question.
-5. Relate the topic to existing assets using meaningful relations.
-6. Validate important analogies.
-7. Create a Topic Note; create Candidate Insight only when justified.
+Actively offer questions that help the learner explain, compare or discover a tension. Natural user reasoning can supply evidence without repeated testing. Interest, learning and thoughtful uncertainty are valid outcomes; engineering implementation is not a universal prerequisite.
 
-## Stop Conditions
+Connect to other assets only when the relationship adds explanatory or practical value. At meaningful checkpoints, save the actual conclusion and unresolved question, consider important increments, and continue without running a full asset audit every turn.
 
-The boundary and core structure are clear; major unknowns are visible; the next step can become learning, decision, or experiment.
+Before delivery, ask whether the whole response advances the actual user goal. Individually accurate sentences do not excuse a misplaced teaching focus. Current feedback should change concrete selection and explanation, not just the introductory promise.

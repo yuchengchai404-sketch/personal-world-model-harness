@@ -3,34 +3,22 @@ type: skill
 status: active
 ---
 
-# Skill: model-promotion
+# model-promotion
 
-## Purpose
+Use for purpose-based asset decisions: retain in Note, extend or extract an Insight, prepare a Candidate Model, test, adopt, revise, narrow or retire. Promotion is not the default destination.
 
-Decide whether a Candidate Insight stays candidate, enters testing, becomes a Candidate Model, is revised, or is archived.
+## Insight
 
-## Flow
+Look for independent retrieval value, explainable reasoning, traceable origin and attribution, a relevant counterexample or scope check, and a useful relationship to existing knowledge. Do not force cross-domain claims. Extend an adequate existing asset when appropriate.
 
-Note / Observation → Candidate Insight → Testing Insight → Candidate Model → User approval → Active Model
+Candidate does not mean user-endorsed. Testing requires an actual test or identified partial support, not only a plan; record what happened and what remains unresolved.
 
-## Insight Gate
+## Model
 
-- Independently stateable claim rather than a quotation.
-- Explainable reasoning chain.
-- Traceable origin.
-- At least one counterexample or boundary.
-- Relation to existing assets.
-- Clear value when retrieved outside the original Note.
+A method with a clear use, structure and basis may become a Candidate Model while evidence gaps remain visible.
 
-## Model Gate
+For Active status, require independent support from at least two sources, domains or real situations; conditions and failure boundaries; traceable real Case support and consideration of alternatives; practical judgment value; an increment over existing models; and explicit user approval. Same-origin retellings and hypothetical analogies are not independent support. Cases may live in Notes without separate files.
 
-- At least two independent sources, domains, or real cases.
-- Conditions and failure boundaries.
-- Supporting Case and competing explanation.
-- Ability to guide prediction, judgment, or action.
-- Information gain over existing Models.
-- Explicit user approval.
+User approval does not make unmet evidence conditions satisfied. Material changes to an Active Model require approval. Narrowing, splitting or ending an analogy may be a better outcome than unification.
 
-## Prohibition
-
-Do not auto-promote Active Models. Do not replace evidence with confidence scores or polished wording.
+Use Operations for related pending decisions and closure. Expression polish and confidence numbers do not raise evidence status.

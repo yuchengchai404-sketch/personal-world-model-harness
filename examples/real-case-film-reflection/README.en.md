@@ -1,5 +1,7 @@
 # Real Case: From Film Reflection to Testable Insights
 
+> **Historical case from the August public edition.** The approved public reconstruction and statuses below describe that run, not current learning progress or newly verified claims. Current local recovery belongs to Topic Resume, global routing to STATE; follow the [current asset design](../../docs/promotion-pipeline.md), not the historical workflow, when using the template.
+
 [中文](README.md) | [English](README.en.md)
 
 > A real PWM run based on a discussion of the film 《欢迎来龙餐馆》, compressed, sanitized, and reconstructed for public presentation.

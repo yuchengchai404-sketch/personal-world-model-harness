@@ -1,79 +1,16 @@
-# Demo: Learning Loop
+# Demo: understanding, recovery and selective persistence
 
-This is a sanitized, compressed example. It preserves the system behavior, not any private conversation.
+This fictional walkthrough uses the actual files in [the starter workspace](../../template/00_System/Home.md). It illustrates intended behavior; it is not a new independent model evaluation.
 
-## 1. User input
+1. Read [STATE](../../template/00_System/STATE.md), then [Topic Resume](../../template/30_Notes/Learning%20Demo%20Topic.md#resume).
+2. Ask: “Explain the difference between recognizing a reminder and reconstructing understanding. Do not create a new Insight yet.”
+3. The useful response explains the distinction through the desk example rather than listing governance rules. It need not ask a question before answering.
+4. If the user gives new reasoning, preserve it separately from AI interpretation and update the local Resume. Do not claim understanding from “continue.”
+5. Pause, then ask where the discussion stopped. Recovery should use the existing conclusion and unresolved question, not reread all history.
+6. Request a later review. The [derived example](../../template/30_Notes/Demo%20Review.md) supplies the familiar situation and key reasoning, with a source link.
 
-> A system is not complete merely because roles, commands, and processes are clear. If it cannot concentrate resources on a key problem and improve the success rate of the intended outcome, it may only be efficient self-satisfaction.
+## What to inspect
 
-## 2. Runtime selection
+Can the user understand the answer without reading the Note? Does the local checkpoint match what actually happened? Can the next turn continue? Was a no-new-Insight request respected? Did a draft expression remain a draft?
 
-```text
-CORE
-+ USER
-+ STATE
-+ review-and-challenge Skill
-+ one relevant prior Insight
-```
-
-The full design document and unrelated Notes are not loaded.
-
-## 3. Independent AI review
-
-Accurate part:
-
-- The claim distinguishes operational smoothness from outcome effectiveness.
-
-Required correction:
-
-- A good outcome alone cannot prove system capability; luck, selection effects, and external conditions may dominate.
-
-Refined test:
-
-> Under comparable conditions, does this system reliably increase the probability, quality, or efficiency of reaching the goal?
-
-Boundary:
-
-- Some systems optimize safety, resilience, or learning rather than immediate output.
-
-## 4. Note output
-
-The Note stores:
-
-- original user wording;
-- AI review in a separate section;
-- assumptions and counterexample;
-- source or discussion context;
-- unresolved validation question.
-
-The Note remains complete even if no Insight is created.
-
-## 5. Promotion decision
-
-Candidate:
-
-> System capability must be evaluated by incremental outcome value under comparable conditions, not by internal smoothness alone.
-
-Status: `candidate`, not Model.
-
-Reason:
-
-- independently reusable across organization, product, and Agent Harness discussions;
-- reasoning and boundary are visible;
-- real cases are still insufficient for Model promotion.
-
-## 6. STATE update
-
-```text
-completed: first review and Candidate Insight extraction
-unresolved: define a measurable outcome and comparable condition
-resume_with: test against one system that values resilience over speed
-```
-
-## What this demo proves
-
-- The user contributes the initial judgment.
-- AI challenges instead of merely polishing it.
-- The complete reasoning stays in Note.
-- Only the independently reusable claim becomes Candidate Insight.
-- Cross-session continuation is stored in STATE.
+These are behavioral questions for a runtime trial. File existence alone cannot establish them. A Note is a complete possible outcome; full topic closure warrants an asset disposition, not compulsory promotion.

@@ -1,30 +1,24 @@
 ---
 type: system
-status: active
+status: example
 ---
 
-# USER
+# USER — fictional starter preferences
 
-## Stable preferences
+These are editable sample preferences, not facts about the repository owner or universal requirements. Confirm the real user's choices before adopting them.
 
-- Prefer a global map before details.
-- Express an initial understanding before receiving AI feedback.
-- Value independent challenge over agreement.
-- Use analogy as an exploration tool, not proof.
-- Prefer one or two high-information follow-up rounds.
+## Purpose
 
-## Long-term purpose
+Explore questions worth learning, develop independent judgment, and use knowledge in life or creation. Let the purpose vary by topic; not every session needs a measurable external outcome.
 
-- Improve independent understanding, judgment, transfer and application.
-- Turn scattered ideas into structured, testable and revisable reasoning.
-- Use AI to augment rather than replace thinking.
+## Learning preferences
 
-## Context boundary
+Prefer a map when entering an unfamiliar field, concrete situations before dense terminology, readable paragraphs and meaningful follow-up questions. A direct request for explanation should not require answering a quiz first.
 
-Add personal background only when it changes the current explanation or decision. Do not make private biography default Runtime Context.
+Use diagrams, images, interaction or text according to the content. Visual forms can explain relationships and reduce mental reconstruction; they are not a quota or decoration. Adjust to actual feedback.
 
-## Interaction constraints
+Learn primarily through the conversation. Background files support future continuity and optional verification, not mandatory duplicate reading. Reusable expressions should be faithful and natural to communicate, rather than exhaustive definitions.
 
-- Do not attribute AI-generated claims to the user.
-- Do not promote an untested idea as a settled belief.
-- Do not apply one successful workflow mechanically to every task.
+## Maintenance
+
+Keep checks proportional and avoid recurring chores. Only add stable personal context when it materially improves future collaboration and the user has confirmed it. Topic goals and temporary interests stay in the relevant Topic Note.
